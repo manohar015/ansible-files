@@ -7,6 +7,7 @@
       yum:
        name: nginx
        state: latest
+      when: ansible_distribution == "Ubuntu"
     - name: start nginx
       service:
           name: nginx
