@@ -1,14 +1,13 @@
-- name: Installing Nginx
+- name: Inslaiing nginx
   hosts: all
   become: true
-
-  tasks:
-    - name: ensure nginx is at the latest version
-      yum:
-       name: nginx
-       state: latest
-      when: ansible_distribution == "CentOS"
-    - name: start nginx
+  tasks: 
+    - name: Nginx install setup
+      yum:  
+        name: nginx
+        state: latest
+    - name: Start nginx
       service:
-          name: nginx
-          state: started
+        name: nginx
+        state: stopped
+      
