@@ -1,7 +1,7 @@
 - name: This is first yml script
   hosts: all
   tasks: 
-    - name: This is first task
+    - name: Installing NGINX
       debug:
          msg: Hello from 1st task
          
