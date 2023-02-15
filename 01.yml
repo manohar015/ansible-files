@@ -4,3 +4,21 @@
     - name: This is first task
       ansible.builtin.debug:
          msg: Hello from 1st task
+         
+- name: Working on loop
+  hosts: all
+  tasks: 
+    - name: Looping values
+      debug:
+        msg: Course name is {{item}}
+        loop:
+          - aws
+          - gcp
+          - azure
+
+
+    
+    
+    
+
+
