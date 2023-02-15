@@ -1,6 +1,6 @@
-- name: This is first yml script
-  hosts: all
-  tasks: 
-    - name: This is first task
+- name: Playbook name is Play1 
+  hosts: all  
+  tasks:
+    - name: Print hello from task1 
       ansible.builtin.debug:
-      msg: Hello from 1st task
+        msg: Hai from the task1 of play1 
