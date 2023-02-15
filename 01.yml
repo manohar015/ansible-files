@@ -2,7 +2,7 @@
   hosts: all
   tasks: 
     - name: This is first task
-      ansible.builtin.debug:
+      debug:
          msg: Hello from 1st task
          
 - name: Working on loop
